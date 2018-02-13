@@ -2,12 +2,11 @@
 .jumbotron {
 	margin: 0 auto;
 	width: 90%;
-	background-color: #f4fbff;
 }
 
 .contenedorjumbotron {
-	margin-top: 50px;
-	margin-bottom: 60px;
+	margin-top: 80px;
+	margin-bottom: 90px;
 }
 
 .banner {
@@ -20,21 +19,17 @@
 }
 
 img#screenshots {
-	max-width: 50%;
-	margin-bottom: 5%;
+	width: 90%;
 }
 
 div.contenedor1 {
-	margin: 0 12%;
+	margin: 100px 15%;
 }
 
 h3.descarga-subtitulo {
-	margin: 5% 0;
-	text-align: center;
+	margin-top: 25%;
 }
 
 p.descarga-texto {
-	margin: 0 5%;
-	margin-bottom: 10%;
 	text-align: justify;
 }

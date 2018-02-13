@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls.static import static
+from django.conf import settings
+
 
 from FundamentosPlay.views import home, students, teachers, assistant
 
@@ -26,4 +29,4 @@ urlpatterns = [
     path('accounts/signup/teacher/', teachers.TeacherSignUpView.as_view(), name='teacher_signup'),
   # path('accounts/signup/assistants/', assistant.AssistantSignUpView.as_view(), name='assistant_signup'),
     path('admin/', admin.site.urls),
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
