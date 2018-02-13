@@ -1,0 +1,40 @@
+.banner {
+	height: 100px;
+}
+
+#title {
+	color: #0B173B;
+	margin-top: 0px;
+	margin-left: 10%;
+	margin-bottom: 0px;
+	padding-top: 0.8em;
+}
+
+img.logo {
+	height: 120px;
+	margin-left: 2%;
+}
+
+h2#title-faq {
+	margin-top: 1em;
+	margin-left: 10%;
+	font-size: 3em;
+	text-shadow: 1px 1px 1px grey;
+}
+
+
+/* Responsivo */
+@media (max-width: 640px){
+	#title {
+		font-size: 1.6em;
+	}
+
+	#title-faq {
+		font-size: 2.3em !important;
+		margin-top: 0.5em !important;
+	}
+
+	.logo {
+		display: none;
+	}
+}

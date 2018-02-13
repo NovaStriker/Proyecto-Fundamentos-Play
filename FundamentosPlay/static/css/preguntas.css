@@ -1,0 +1,47 @@
+div#contenedorPreguntas {
+	border-bottom: dotted 1px black;
+	padding-bottom: 10px;
+}
+
+.botonPregunta {
+	margin: 5% 0px;
+	padding: 20px;
+	color: grey;
+	font-size: 0.8em;
+}
+
+.botonAprobar {
+	background: #3ba53f;
+}
+
+button#btnAprobar:hover {
+	color: white;
+	background: #3ae520;
+}
+
+.botonRechazar {
+	background: #963030;
+}
+
+button#btnRechazar:hover {
+	color: white;
+	background: #e52020;
+}
+
+button.guardar {
+	color: white;
+	background: #337AB7;
+}
+
+button.guardar:hover {
+	color: white;
+	background: #345cad;
+}
+
+a.aOpciones {
+	text-decoration: none;
+}
+
+span.textoGuardar {
+	font-size: 0.8em;
+}

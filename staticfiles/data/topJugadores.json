@@ -1,0 +1,37 @@
+[
+	{
+		"puesto":"1er",
+		"nombre":"Ivan Aguirre",
+		"dias":"2",
+		"tiempo":"00:00:56",
+		"foto":"https://i.pinimg.com/736x/28/bc/9c/28bc9ca229cceec69a8342aa41fcd9e3--cute-animal-memes-for-kids-funny-animal-videos.jpg"
+	},
+	{
+		"puesto":"2do",
+		"nombre":"Kevin Palacios",
+		"dias":"4",
+		"tiempo":"00:01:12",
+		"foto":"https://i.ytimg.com/vi/4olSy5UXO_M/maxresdefault.jpg"
+	},
+	{
+		"puesto":"3ro",
+		"nombre":"Hugo Wong",
+		"dias":"1",
+		"tiempo":"00:01:32",
+		"foto":"https://i.pinimg.com/736x/a4/01/15/a40115fae1f42605ea519b4f6f970241--funny-pets-funny-animals.jpg"
+	},
+	{
+		"puesto":"4to",
+		"nombre":"Joe Saverio",
+		"dias":"2",
+		"tiempo":"00:01:49",
+		"foto":"https://www.askideas.com/media/08/Dog-On-Phone-Funny-Pet-Picture.jpg"
+	},
+	{
+		"puesto":"5to",
+		"nombre":"Geancarlo Murillo",
+		"dias":"3",
+		"tiempo":"00:02:07",
+		"foto":"https://www.askideas.com/media/08/Cute-Cat-In-Costume-Funny-Pet.jpg"
+	}
+]

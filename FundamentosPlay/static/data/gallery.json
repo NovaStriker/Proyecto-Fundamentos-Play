@@ -1,0 +1,34 @@
+[
+	{
+		"imagen":"img/captures/juego_1.png",
+		"alt":"ScreenShot 1"
+	},
+	{
+		"imagen":"img/captures/juego_2.png",
+		"alt":"ScreenShot 2"
+	},
+	{
+		"imagen":"img/captures/juego_3.png",
+		"alt":"ScreenShot 3"
+	},
+	{
+		"imagen":"img/captures/juego_4.png",
+		"alt":"ScreenShot 4"
+	},
+	{
+		"imagen":"img/captures/juego_5.png",
+		"alt":"ScreenShot 5"
+	},
+	{
+		"imagen":"img/captures/juego_6.png",
+		"alt":"ScreenShot 6"
+	},
+	{
+		"imagen":"img/captures/juego_7.png",
+		"alt":"ScreenShot 7"
+	},
+	{
+		"imagen":"img/captures/juego_8.png",
+		"alt":"ScreenShot 8"
+	}
+]
