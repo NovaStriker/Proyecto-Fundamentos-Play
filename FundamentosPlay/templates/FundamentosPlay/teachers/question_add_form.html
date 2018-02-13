@@ -1,0 +1,21 @@
+{% extends 'FundamentosPlay/teachers/teacher.html' %}
+
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'teachers:question_change_list' %}">Mis Preguntas</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Crear un Pregunta</li>
+    </ol>
+  </nav>
+  <h2 class="mb-3">Cree un nueva Pregunta</h2>
+  <p class="lead">Agregue primero los detalles de la pregunta. En el siguiente paso podrá agregar las respuestas.</p>
+  <form method="post" novalidate>
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-success">Crear</button>
+  </form>
+{% endblock %}

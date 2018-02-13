@@ -1,0 +1,47 @@
+{% extends 'FundamentosPlay/base_fp.html' %}
+{% load static %}
+
+{% block styles %}
+<link href="{% static 'css/common.css' %}" rel="stylesheet">
+<link href="{% static 'css/informacion.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block info %}
+active
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid" id="info">	
+	<div class="contenedor-acerca">
+		<article>
+			<h3>Acerca de Fundamentos Play</h3>
+			<p class="p-texto">
+				Fundamentos Play es un juego de preguntas y respuestas destinado a los estudiantes de la materia fundamentos de programación con el fin de ayudar didácticamente al aprendizaje.
+			</p>
+			<p class="p-texto">
+				Este portal web contiene información recopilada del juego como la tabla de posiciones en la que se destaca al primer lugar de cada uno de los 9 niveles que contiene el juego. Desde el mismo se podrá ingresar con cuenta de ayudante académico y/o profesor para consultar estadísticas y gestionar las preguntas que se dispondrán al juego.
+			</p>
+		</article>
+	</div>
+	<div class="contenedor-visitas">
+		<h3>¿De dónde nos visitan?</h3>
+		<p class="p-texto">
+			Nosotros nos encontramos en la Escuela Politécnica del Litoral del Ecuador "ESPOL", en la Facultad de Ingeniería Eléctrica y Computación "FIEC".
+		</p>
+	</div>
+		
+	<div id="map">
+		<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d940.8121277845868!2d-79.96746264024756!3d-2.144930818354681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFIEC!5e0!3m2!1ses-419!2sec!4v1518481537366" 
+		allowfullscreen></iframe>
+	</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="{% static 'js/info.js' %}"></script>
+<!--
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdX2avwF_aEKtnQq0yrKWZuzfKI2h-jQc&callback=initMap">
+</script>
+-->
+{% endblock %}

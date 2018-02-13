@@ -1,0 +1,25 @@
+{% extends 'FundamentosPlay/base_fp.html' %}
+{% load static %}
+
+{% block styles %}
+<link href="{% static 'css/common.css' %}" rel="stylesheet">
+<link href="{% static 'css/stylefaq.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block faq %}
+active
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div id="seccion-preguntas">
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="{% static 'js/faq.js' %}"></script>
+{% endblock %}

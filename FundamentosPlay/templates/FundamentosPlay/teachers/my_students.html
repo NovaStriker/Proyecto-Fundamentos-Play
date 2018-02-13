@@ -1,0 +1,42 @@
+{% extends 'FundamentosPlay/teachers/teacher.html' %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Mis Estudiantes</li>
+  </ol>
+</nav>
+<h2 class="mb-3">Mis Estudiantes</h2>
+
+    <div class="card">
+        <div class="table-responsive">
+             <table class="table mb-0">
+            <thead  class="thead thead-light">
+              <tr>
+                <th>Usuario</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for student in students %}
+              <tr>
+                  <td class="align-middle"><a href="{% url 'teachers:student_progress' student.user.pk %}">{{ student.user.username }}</a></td>
+                  <td class="align-middle">{{ student.user.first_name}}</td>
+                  <td class="align-middle">{{ student.user.last_name }}</td>
+                </tr>
+              {% empty %}
+                <tr>
+                  <td class="bg-light text-center font-italic" colspan="5">No tiene estudiantes.</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+
+    </div>
+
+
+{% endblock %}

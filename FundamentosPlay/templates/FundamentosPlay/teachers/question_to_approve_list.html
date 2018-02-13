@@ -1,0 +1,42 @@
+{% extends 'FundamentosPlay/teachers/teacher.html' %}
+
+{% block content %}
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Preguntas Por Aprobar</li>
+    </ol>
+  </nav>
+  <h2 class="mb-3">Preguntas Por Aprobar</h2>
+
+  <div class="card">
+    <table class="table mb-0">
+      <thead>
+        <tr>
+          <th>Contenido</th>
+          <th>Nivel</th>
+          <th>Dificultad</th>
+          <th>Fecha</th>
+          <th>Creador</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for question in to_approve %}
+          <tr>
+            <td class="align-middle"><a href="{% url 'teachers:question_approve' question.pk %}">{{ question.text }}</a></td>
+            <td class="align-middle">{{ question.level}}</td>
+            <td class="align-middle">{{ question.Dificultad }}</td>
+            <td class="align-middle">{{ question.fecha}}</td>
+            <td class="align-middle">{{ question.owner }}</td>
+
+          </tr>
+        {% empty %}
+        <tr>
+          <td class="bg-light text-center font-italic" colspan="5">No tiene preguntas por aprobar.</td>
+        </tr>
+
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

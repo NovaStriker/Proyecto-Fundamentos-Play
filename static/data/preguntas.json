@@ -1,0 +1,94 @@
+[
+	{
+		"numero":"1",
+		"pregunta":"For i in range.",
+		"contenido":"For i in range, es una sentencia de python ? ",
+		"respuestas":[
+			{
+				"respuesta":"No",
+				"retroalimentacion":"Si es una sentencia de python"
+			},
+			{
+				"respuesta":"Si.",
+				"retroalimentacion":""
+			},
+			{
+				"respuesta":"Si pero tiene sintaxis de otro lenguaje",
+				"retroalimentacion":"No hay ninguna otra sintaxis"
+			},
+			{
+				"respuesta":"No, pero parece",
+				"retroalimentacion":"si es una sentencia de python"
+			}
+		]
+	},
+	{
+		"numero":"2",
+		"pregunta":"Pregunta numero 2.",
+		"contenido":"Contendio de la pregunta 2.",
+		"respuestas":[
+			{
+				"respuesta":"Respuesta 1 de la pregunta 2.",
+				"retroalimentacion":"retroalimentacion de la respuesta 1."
+			},
+			{
+				"respuesta":"Respuesta 2 de la pregunta 2.",
+				"retroalimentacion":"retroalimentacion de la respuesta 2."
+			},
+			{
+				"respuesta":"Respuesta 3 de la pregunta 2.",
+				"retroalimentacion":"retroalimentacion de la respesta 3."
+			},
+			{
+				"respuesta":"Respuesta 4 de la pregunta 2.",
+				"retroalimentacion":"retroalimentacion de la respuesta 4."
+			}
+		]
+	},
+	{
+		"numero":"3",
+		"pregunta":"Pregunta numero 3.",
+		"contenido":"Contendio de la pregunta 3.",
+		"respuestas":[
+			{
+				"respuesta":"Respuesta 1 de la pregunta 3.",
+				"retroalimentacion":"retroalimentacion de la respuesta 1."
+			},
+			{
+				"respuesta":"Respuesta 2 de la pregunta 3.",
+				"retroalimentacion":"retroalimentacion de la respuesta 2."
+			},
+			{
+				"respuesta":"Respuesta 3 de la pregunta 3.",
+				"retroalimentacion":"retroalimentacion de la respesta 3."
+			},
+			{
+				"respuesta":"Respuesta 4 de la pregunta 3.",
+				"retroalimentacion":"retroalimentacion de la respuesta 4."
+			}
+		]
+	},
+	{
+		"numero":"4",
+		"pregunta":"Pregunta numero 4.",
+		"contenido":"Contendio de la pregunta 4.",
+		"respuestas":[
+			{
+				"respuesta":"Respuesta 1 de la pregunta 4.",
+				"retroalimentacion":"retroalimentacion de la respuesta 1."
+			},
+			{
+				"respuesta":"Respuesta 2 de la pregunta 4.",
+				"retroalimentacion":"retroalimentacion de la respuesta 2."
+			},
+			{
+				"respuesta":"Respuesta 3 de la pregunta 4.",
+				"retroalimentacion":"retroalimentacion de la respesta 3."
+			},
+			{
+				"respuesta":"Respuesta 4 de la pregunta 4.",
+				"retroalimentacion":"retroalimentacion de la respuesta 4."
+			}
+		]
+	}
+]

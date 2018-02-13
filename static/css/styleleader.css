@@ -1,0 +1,146 @@
+
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+ background-color: #CEECF5;
+}
+
+#navBar{
+	background-color:#0B173B;
+	box-shadow:0px 5px 5px #888888;
+}
+
+#navLogo{
+	color:#0B173B;
+	padding-left:0.3em;	
+}
+
+.navItem{
+	padding-right:0.7em;
+	padding-left:0.7em;
+}
+
+.navItem, #navRegistro, #navIngresar{
+	color:white;
+	text-align:center;
+	font-size:1.2em;
+	display:inline-block;
+}
+
+#navRegistro{
+	padding-left:8em;
+	padding-right:0.5em;
+	border-right:thick ridge white;
+}
+
+#navIngresar{
+	padding-left:0.5em;
+}
+
+#espolimg{
+	border:0;
+	width:6%;
+	padding:0.5em;
+	vertical-align:middle;
+}
+
+#userimg{
+	vertical-align:middle;
+	padding:0.2em;
+	width:25px;
+}
+
+#banner{
+	margin:0px auto;
+	background-image: url("https://media.coindesk.com/uploads/2014/10/shutterstock_114252466.jpg");
+	background-size: 100%;
+	background-repeat:no-repeat;
+	height: 200px;
+}
+
+#barraBuscar {
+	margin:2em;
+	float:right;
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+#barraBuscar:focus{
+    width: 20%;
+}
+
+#titulo{
+	font-size:50px;
+	text-align:center;
+	color:white;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top:2em;
+	padding-bottom:1em;
+}
+
+#storeLogos{
+	display:inline-block;
+	padding-bottom:2em;
+}
+
+#androidSLogo, #appleSLogo{
+	width:12%;
+}
+#androidSLogo{
+	padding-left:22em;
+}
+#appleSLogo{
+	padding-left:17em;
+}
+
+#mascotaLogo{
+	width:10%;
+	padding:0.5em;
+	padding-left: 5em;
+	float:left;
+	clear:both;
+}
+
+#content{
+	display:inline-block;
+}
+
+#message{
+	text-align:center;
+	background-color:#5882FA;
+	padding-top:1em;
+	padding-left:1em;
+	padding-right:1em;
+	padding-bottom:1em;
+	margin-top:2em;
+	margin-left:17em;
+	margin-right:25em;
+	border:1px solid #0040FF;
+	border-radius: 20px 30px 30px 5px;
+}
+
+h1 {
+	font-family: serif;
+	text-align: center;
+	color: blue;
+}
+
+.rounded-circle {
+	width: 75px;
+	height: 75px;
+}
+
+.leader {
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.p-2 {
+	background-color: aqua;
+	margin: 2%;
+}

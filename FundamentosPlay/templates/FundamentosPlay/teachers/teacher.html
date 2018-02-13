@@ -1,0 +1,33 @@
+{% extends 'FundamentosPlay/base_account.html' %}
+{% load static %}
+{% block menu %}
+    <ul class="nav  navbar-nav navbar-vertical-align ">
+        <li class="lititle active col-sm-12"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>  Preguntas</a></li>
+        <li class="col-sm-12"><a href="{% url 'teachers:question_change_list' %}" class="menu-option"><span class="glyphicon glyphicon-list-alt"></span > Mis Perguntas</a></li>
+        <li class="col-sm-12"><a href="{% url 'teachers:question_add' %}" class="menu-option"><span class="glyphicon glyphicon-plus"></span>  Crear Pregunta </a></li>
+        <li class="col-sm-12"><a href="{% url 'teachers:question_filter' 'PC' %}" class="menu-option"><span class="glyphicon glyphicon-pencil"></span>  Corregir Preguntas <span class="badge">{{counts.PC}}</span></a></li>
+        <li class="col-sm-12"><a href="{% url 'teachers:question_filter' 'BD' %}" class="menu-option"><span class="glyphicon glyphicon-inbox"></span> Borrador</a></li>
+        <li class="col-sm-12"><a href="{% url 'teachers:to_approve_list' %}" class="menu-option"><span class="glyphicon glyphicon-ok"></span> Aprobar Preguntas<span class="badge">{{counts.questionsPA}}</span></a></li>
+
+    </ul>
+
+    <ul class="nav navbar-nav navbar-vertical-align">
+        <li class="lititle active col-sm-12" ><a href="#"><span class="glyphicon glyphicon-user"></span>  Estudiantes</a></li>
+        <li class="col-sm-12"><a href="{% url 'teachers:my_students' %}" class="menu-option"><span class="glyphicon glyphicon-user"></span>  Mis Estudiantes</a></li>
+        <li class="col-sm-12"><a href="{% url 'teachers:students_to_approve' %}" class="menu-option"><span class="glyphicon glyphicon-ok"></span>  Aprobar Estudiantes<span class="badge">{{counts.usersPA}}</span></a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-vertical-align">
+        <li class=" lititle active col-sm-12"><a href="#"><span class="glyphicon glyphicon-stats"></span>  Estadísitcas</a></li>
+        <li class="col-sm-12"><a href="#" class="menu-option"><span class="glyphicon glyphicon-stats"></span>  Mis Estadísticas</a></li>
+        <li class="col-sm-12"><a href="#" class="menu-option"><span class="glyphicon glyphicon-stats"></span>  Estadísticas de Estudiantes</a></li>
+        <li class="col-sm-12"><a href="#" class="menu-option"><span class="glyphicon glyphicon-stats"></span>  Estadísticas de Niveles</a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/profesor.js' %}"></script>
+{% endblock %}

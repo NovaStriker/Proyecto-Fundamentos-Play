@@ -1,0 +1,45 @@
+div#estUsuarios {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+div.barraUsuario {
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+	background: #00399b;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.barraPregunta {
+	text-align: center;
+	width: 100px;
+	background: #9b0000;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.barraTotal {
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+	background: #679b00;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div#ePregunta {
+	display: inline-block;
+}
+
+p#mesCalificacion {
+	color: white;
+}
+

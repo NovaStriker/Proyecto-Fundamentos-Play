@@ -1,0 +1,34 @@
+{% extends 'FundamentosPlay/profesor_base.html' %}
+{% load static %}
+{% block title  %}{{ usuario }} {% endblock %}
+{% block estilo %}<link rel="stylesheet" type="text/css" href="{% static 'css/perfil.css' %}">{% endblock %}
+{% block content %}
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item active" aria-current="page">Mi Perfil</li>
+	</ol>
+</nav>
+<h2 class="mb-3">{{ usuario }}</h2>
+
+<div class="card">
+
+
+</div>
+<section>
+	<div id="datosbox" class="col-9">
+		<div class="perfil">
+			<div class="profile_image">
+				<a href="#"><img class="thumbnail" src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png" width="240"></a>
+			</div>
+			<div class="user_detail">
+				<p>Nombres: {{ usuario.first_name }}</p>
+				<p>Apellidos: {{ usuario.last_name }}</p>
+				<p>Correo: {{ usuario.email }}</p>
+				<p>Teléfono: {{ usuario.phone }}</p>
+		</div>
+	</div>
+	</div>
+</section>
+{% endblock %}
+{% block script %}
+{% endblock%}

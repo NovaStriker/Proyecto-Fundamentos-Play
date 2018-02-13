@@ -1,0 +1,40 @@
+/*descarga*/
+.jumbotron {
+	margin: 0 auto;
+	width: 90%;
+	background-color: #f4fbff;
+}
+
+.contenedorjumbotron {
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+.banner {
+
+	height: 100px;
+}
+
+.cont-imagen {
+	text-align: center;
+}
+
+img#screenshots {
+	max-width: 50%;
+	margin-bottom: 5%;
+}
+
+div.contenedor1 {
+	margin: 0 12%;
+}
+
+h3.descarga-subtitulo {
+	margin: 5% 0;
+	text-align: center;
+}
+
+p.descarga-texto {
+	margin: 0 5%;
+	margin-bottom: 10%;
+	text-align: justify;
+}

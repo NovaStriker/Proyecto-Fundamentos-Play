@@ -1,0 +1,64 @@
+{% extends 'FundamentosPlay/teachers/teacher.html' %}
+
+{% load crispy_forms_tags crispy_forms_filters %}
+
+{% block content %}
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'teachers:question_change_list' %}">Mis Preguntas</a></li>
+      <li class="breadcrumb-item active" aria-current="page" id="qid">{{ question.id}}</li>
+    </ol>
+  </nav>
+  <h2 class="mb-3">{{ question.txt }}</h2>
+  <form method="post" novalidate id="form">
+    {% csrf_token %}
+    {{ formset.management_form }}
+    {{ form|crispy }}
+    <div class="card mb-3{% if formset.errors %} border-danger{% endif %}">
+      {% for error in formset.non_form_errors %}
+        <div class="card-body bg-danger border-danger text-white py-2">{{ error }}</div>
+      {% endfor %}
+      <table class="table">
+
+        <tbody>
+          {% for form in formset %}
+          <tr>
+            <td class="align-middle">
+              <div class="col-2">
+                {{ form.is_correct }}
+              </div>
+            </td>
+            <td class="align-middle">
+              <div class="col-5">
+                {% for hidden in form.hidden_fields %}{{ hidden }}{% endfor %}
+                {{ form.text|as_crispy_field }}
+              </div>
+            </td>
+            <td class="align-middle">
+              <div class="col-5">
+                {% for hidden in form.hidden_fields %}{{ hidden }}{% endfor %}
+                {{ form.retroalimentacion|as_crispy_field }}
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+
+      </table>
+    </div>
+    <p>
+      <small class="form-text text-muted">Su pregunta debe tener mínimo <strong>2</strong>  y máximo <strong>4</strong> respuestas. Elija al menos una respuesta correcta.</small>
+    </p>
+    {% if question.estado.nombre != "AP" %}
+      <button type="submit" class="btn btn-success">Enviar</button>
+      <button type="button" id="save" class="btn btn-outline-secondary">Guardar</button>
+    {% endif %}
+
+
+     {% if question.estado.nombre == "BD" %}
+        <a href="{% url 'teachers:question_delete' question.id %}" class="delete btn btn-danger float-right">Borrar</a>
+     {% endif %}
+
+  </form>
+{% endblock %}

@@ -1,0 +1,103 @@
+
+
+body {
+  background-color: white;
+}
+
+#navlogo{
+    margin: 5px 10px 5px; 
+}
+
+.navbar{
+    background-color: #0B173B;
+}
+
+
+.principal{
+    padding: 0px;
+}
+
+#nombre-section a {
+   padding: 12px;
+    text-align: center;
+    color: white;
+    
+}
+.navbar>* {
+    display: inline-block;
+}
+
+
+.notice-icon{
+    height: 50px;
+    width: 50px;
+}
+
+.actividad-date{
+    text-align: right;
+}
+
+.actividad{
+    border-bottom: 1px dotted black;
+}
+.actividad-body>* {
+    display: inline-block;
+}
+
+ .footer-img{
+      width:1%; 
+  }
+  
+  footer{
+      
+      margin-top: 10px;
+      /*height: auto;*/
+      background-color: grey;
+      text-align: center;
+  }
+
+
+/* make sidebar nav vertical */ 
+@media only screen and (max-width: 430px) {
+    
+    .navbar-default{
+        border: 1px solid red;
+
+    }
+   
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    background-color: blue; 
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .navbar-default{
+      display: inline; 
+  }
+  
+  .collapse sidebar-navbar-collapse{
+      height: auto;   
+      border: 10px solid red;
+      
+  }
+  
+ 
+  
+  
+}
+
+
