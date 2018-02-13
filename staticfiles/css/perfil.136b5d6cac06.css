@@ -1,0 +1,16 @@
+#perfil{
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: white;
+}
+
+.datosbox {
+	width: 96.5%;
+	padding-top: 2em;
+	display: flex;
+	justify-content: center;
+}
+
+.profile_image, .user_detail {
+    margin: 2em;
+}
