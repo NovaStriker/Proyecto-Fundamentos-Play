@@ -1,1 +1,108 @@
-/* Your custom styles */
+@import url('https://fonts.googleapis.com/css?family=Marmelad:400');
+
+body {
+	margin: 0;
+	background-color: #CEECF5 !important;
+	overflow: auto;
+	font-family: 'Marmelad', sans-serif !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.engine {
+	display: none;
+}
+
+/* Estilo del navbar */
+.navbar, .modalTheme{
+	background-color: rgba(11, 23, 59, 1.0);
+	margin-bottom: 0px;
+	font-size: 0.9em;
+}
+
+.top-nav-collapse {
+	background-color: rgba(11, 23, 59, 0.9);
+}
+
+
+.activa a {
+	text-decoration: underline;
+	color: white !important;
+}
+
+.nav a:hover{
+	text-decoration: underline !important;
+}
+
+.navbar-collapse {
+	text-align: center;	
+}
+
+ul, li, .nav, li * {
+	vertical-align: middle !important;
+	padding-top: 0.3%;
+}
+
+#espolimg{
+	border:0;
+	height: 2.2em;
+	vertical-align:middle;
+}
+
+/* Estilos del banner*/
+.banner{	
+	background-image: url("https://media.coindesk.com/uploads/2014/10/shutterstock_114252466.jpg");
+	background-size: 100%;
+	margin-top: 60px;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+
+/* Estilo en barra de busqueda - banner */
+#barraBuscar {
+	color: white;
+	margin:2em;
+	float:right;
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;    
+}
+
+#barraBuscar:focus{
+    width: 20%;
+    background-color: white;
+    color: black;
+}
+
+/* Titulo de la aplicacion mostrado en el banner */
+#titulo{
+	font-size:50px;
+	text-align:center;
+	color:#0B173B;
+	margin: 0px;
+	padding-top:2em;
+	padding-bottom:1em;
+}
+
+.center {
+	text-align: center;
+	display: block;
+}
+
+/* Footer */
+footer{
+	/*background-color:#eeeeee;*/
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.item-center {
+	text-align: center;
+}
+
+/* Estilo mapa */
+#map {
+	height: 500px;
+}
